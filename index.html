@@ -58,7 +58,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h2 class="card-title">Spoons</h2>
+                        <h2 class="card-title itemName">Spoons</h2>
                         <div>
                             <span>$ </span>
                             <span>39.00</span>
@@ -82,7 +82,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h2 class="card-title">Chopping Board</h2>
+                        <h2 class="card-title itemName">Chopping Board</h2>
                         <div>
                             <span>$ </span>
                             <span>24.00</span>
@@ -106,7 +106,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h2 class="card-title">Cooker</h2>
+                        <h2 class="card-title itemName">Cooker</h2>
                         <div>
                             <span>$ </span>
                             <span>99.00</span>
@@ -134,7 +134,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h2 class="card-title">Relax Chair</h2>
+                        <h2 class="card-title itemName">Relax Chair</h2>
                         <div>
                             <span>$ </span>
                             <span>185.00</span>
@@ -158,7 +158,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h2 class="card-title">Foldable Chair</h2>
+                        <h2 class="card-title itemName">Foldable Chair</h2>
                         <div>
                             <span>$ </span>
                             <span>299.00</span>
@@ -182,7 +182,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h2 class="card-title">Sofa</h2>
+                        <h2 class="card-title itemName">Sofa</h2>
                         <div>
                             <span>$ </span>
                             <span>399.00</span>
@@ -210,7 +210,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h2 class="card-title">Sportscap</h2>
+                        <h2 class="card-title itemName">Sportscap</h2>
                         <div>
                             <span>$ </span>
                             <span>49.00</span>
@@ -234,7 +234,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h2 class="card-title">Jersey Set</h2>
+                        <h2 class="card-title itemName">Jersey Set</h2>
                         <div>
                             <span>$ </span>
                             <span>69.00</span>
@@ -258,10 +258,10 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h2 class="card-title">Nike Float</h2>
+                        <h2 class="card-title itemName">Nike Float</h2>
                         <div>
                             <span>$ </span>
-                            <span>149.00</span>
+                            <span>100.00</span>
                         </div>
                         <div class="card-actions">
                             <button class="btn  bg-pink-600 active:bg-pink-600 hover:bg-pink-600 text-white">Buy
@@ -279,22 +279,22 @@
                     <div class="join">
                         <div>
                             <div>
-                                <input class="input input-bordered join-item w-[30vw] lg:w-auto md:w-auto" placeholder="Coupon Code" />
+                                <input id="coupon" class="input input-bordered join-item w-[30vw] lg:w-auto md:w-auto" placeholder="Coupon Code" />
                             </div>
                         </div>
                         <div class="indicator ">
-                            <button
+                            <button id="apply"
                                 class="btn join-item bg-pink-600 active:bg-pink-600 hover:bg-pink-600 text-white">Apply</button>
                         </div>
                     </div>
                 </div>
-                <ul>
+                <ul id="list">
 
                 </ul>
                 <hr class="w-full h-1 bg-pink-500">
-                <h2 class="text-xl">Total Price: $ <span></span></h2>
-                <h2 class="text-xl">Discount: $ <span></span></h2>
-                <h2 class="text-xl">Grand Total: $ <span></span></h2>
+                <h2 class="text-xl">Total Price: $ <span id="totalPrice"></span></h2>
+                <h2 class="text-xl">Discount: $ <span id="discount"></span></h2>
+                <h2 class="text-xl">Grand Total: $ <span id="grandTotal"></span></h2>
                 <button class="btn w-full bg-pink-600 active:bg-pink-600 hover:bg-pink-600 text-white " onclick="my_modal_2.showModal()">Checkout</button>
                 <dialog id="my_modal_2" class="modal w-[80vw] lg:w-auto md:w-auto mx-auto">
                     <div class="modal-box flex flex-col justify-center items-center">
@@ -303,7 +303,7 @@
                         <div>
                             <img src="image/cart.png" alt="">
                         </div>
-                        <h3 class="font-bold text-lg">Hope to see you again!</h3>
+                        <h3 class="font-bold text-lg ">Hope to see you again!</h3>
                         <p class="py-4 text-xs">Press ESC key or click outside to close</p>
                     </div>
                     <form method="dialog" class="modal-backdrop">
